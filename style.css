@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 
 body {
-  padding-top: 10px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .container {
@@ -12,6 +16,15 @@ body {
   transform: translate(-50%, 0);
   background-color: #fff;
   color: #444;
+}
+
+.main-header {
+  background-color: green;
+  color: white;
+}
+
+.main-footer {
+  border-top: 2px solid green;
 }
 
 input {
@@ -23,6 +36,7 @@ input {
   text-align: center;
   background-color: green;
   color: white;
+  transition: 0.3s;
 }
 
 input::placeholder {
@@ -33,18 +47,27 @@ input:invalid {
   background-color: red;
 }
 
+input:focus {
+  background-color: white;
+  color: #444;
+  box-shadow: inset 0px 0px 0px 2px green;
+}
+
 table {
+  table-layout: fixed ;
   border-collapse: collapse;
-  margin: 25px 0;
+  margin: 20px 0;
   font-size: 0.9em;
-  min-width: 500px;
-  border-radius: 5px 5px 0 0;
+  width: 500px;
+  border-radius: 8px 8px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-th, td {
+th,
+td {
   padding: 12px 15px;
+
 }
 
 tr {
@@ -59,7 +82,6 @@ tr {
   text-align: right;
 }
 
-#Item1, #Item2, #Item3 {
-  width: 150px;
+#totalChange {
+  font-size: 1.3em;
 }
-
