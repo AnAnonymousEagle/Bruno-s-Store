@@ -1,13 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
+/* background from https://www.magicpattern.design/tools/css-backgrounds
+scrollbar from https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 body {
   font-family: "Nunito", sans-serif;
+  background-color: #e5e5f7;
+  background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 25px 25px, linear-gradient(green 2px, transparent 2px) 0 -1px, linear-gradient(90deg, green 2px, #ffffff 2px) -1px 0;
+  background-size: 100px 100px, 50px 50px, 25px 25px, 25px 25px;
 }
 
 .container {
